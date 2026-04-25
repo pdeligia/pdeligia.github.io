@@ -1,0 +1,2810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9VMPT5SLS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-M9VMPT5SLS');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pantazis Deligiannis — Principal Software Engineer</title>
+  <meta name="description" content="Principal Software Engineer at Microsoft CoreAI building AI agent systems that analyze, plan, and execute large-scale code transformations across production codebases.">
+  <meta name="author" content="Pantazis Deligiannis">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#f7f3ec">
+  <link rel="canonical" href="https://pdeligia.github.io/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" sizes="180x180">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pantazis Deligiannis">
+  <meta property="og:title" content="Pantazis Deligiannis — Principal Software Engineer">
+  <meta property="og:description" content="Principal Software Engineer at Microsoft CoreAI building AI agent systems that analyze, plan, and execute large-scale code transformations across production codebases.">
+  <meta property="og:url" content="https://pdeligia.github.io/">
+  <meta property="og:image" content="https://pdeligia.github.io/assets/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Portrait card for Pantazis Deligiannis, Principal Software Engineer at Microsoft CoreAI.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pantazis Deligiannis — Principal Software Engineer">
+  <meta name="twitter:description" content="Principal Software Engineer at Microsoft CoreAI building AI agent systems that analyze, plan, and execute large-scale code transformations across production codebases.">
+  <meta name="twitter:image" content="https://pdeligia.github.io/assets/og-image.png">
+  <meta name="twitter:image:alt" content="Portrait card for Pantazis Deligiannis, Principal Software Engineer at Microsoft CoreAI.">
+  <meta name="twitter:creator" content="@pdeligia">
+  <meta name="twitter:site" content="@pdeligia">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://pdeligia.github.io/#person",
+      "name": "Pantazis Deligiannis",
+      "url": "https://pdeligia.github.io/",
+      "image": "https://pdeligia.github.io/assets/me.jpg",
+      "jobTitle": "Principal Software Engineer, Microsoft CoreAI",
+      "description": "Principal Software Engineer at Microsoft CoreAI building AI agent systems that analyze, plan, and execute large-scale code transformations across production codebases.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Microsoft"
+      },
+      "sameAs": [
+        "https://github.com/pdeligia",
+        "https://x.com/pdeligia"
+      ]
+    }
+  </script>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var meta = document.querySelector('meta[name="theme-color"]');
+      var theme = 'light';
+      var source = 'system';
+
+      try {
+        theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      } catch (e) {}
+
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'dark' || saved === 'light') {
+          theme = saved;
+          source = 'user';
+        }
+      } catch (e) {}
+
+      root.setAttribute('data-theme', theme);
+      root.setAttribute('data-theme-source', source);
+
+      if (meta) {
+        meta.setAttribute('content', theme === 'dark' ? '#0f1723' : '#f7f3ec');
+      }
+    })();
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f3ec;
+      --bg-soft: #fbf8f2;
+      --bg-gradient-start: #fbf8f2;
+      --bg-glow-top: rgba(41, 74, 115, 0.08);
+      --bg-glow-bottom: rgba(41, 74, 115, 0.05);
+      --bg-fade: rgba(247, 243, 236, 0);
+      --surface: rgba(255, 255, 255, 0.74);
+      --surface-strong: rgba(255, 255, 255, 0.92);
+      --text: #17263b;
+      --muted: #5c6b7b;
+      --accent: #294a73;
+      --accent-strong: #1d3555;
+      --accent-warm: var(--accent);
+      --accent-warm-strong: var(--accent-strong);
+      --line: rgba(23, 38, 59, 0.14);
+      --shadow: 0 20px 48px rgba(23, 38, 59, 0.08);
+      --header-bg: rgba(251, 248, 242, 0.82);
+      --header-border: rgba(23, 38, 59, 0.1);
+      --interactive-bg: rgba(255, 255, 255, 0.72);
+      --interactive-bg-soft: rgba(255, 255, 255, 0.68);
+      --interactive-bg-strong: rgba(255, 255, 255, 0.9);
+      --interactive-border: rgba(41, 74, 115, 0.14);
+      --interactive-border-strong: rgba(41, 74, 115, 0.22);
+      --interactive-shadow: 0 1px 2px rgba(23, 38, 59, 0.06);
+      --interactive-shadow-hover: 0 4px 12px rgba(23, 38, 59, 0.08);
+      --section-chip-shadow: 0 12px 28px rgba(23, 38, 59, 0.08);
+      --summary-bg: rgba(255, 255, 255, 0.4);
+      --theme-toggle-bg: transparent;
+      --theme-toggle-border: rgba(41, 74, 115, 0.14);
+      --theme-toggle-hover-bg: rgba(255, 255, 255, 0.82);
+      --theme-toggle-hover-border: rgba(41, 74, 115, 0.22);
+      --theme-toggle-shadow: 0 4px 14px rgba(23, 38, 59, 0.12);
+      --timeline-rail: linear-gradient(90deg, rgba(41, 74, 115, 0.08), rgba(41, 74, 115, 0.28), rgba(41, 74, 115, 0.08));
+      --timeline-pill-border: rgba(41, 74, 115, 0.1);
+      --timeline-pill-bg: rgba(255, 255, 255, 0.96);
+      --timeline-pill-icon-border: rgba(41, 74, 115, 0.14);
+      --timeline-paper-bg: rgba(237, 244, 255, 0.96);
+      --timeline-milestone-bg: rgba(255, 255, 255, 0.94);
+      --timeline-award-border: rgba(190, 149, 34, 0.18);
+      --timeline-award-bg: rgba(255, 248, 226, 0.96);
+      --timeline-talk-border: rgba(13, 120, 137, 0.16);
+      --timeline-talk-bg: rgba(232, 249, 252, 0.98);
+      --timeline-writing-border: rgba(112, 84, 168, 0.16);
+      --timeline-writing-bg: rgba(245, 240, 255, 0.96);
+      --timeline-phd-border: rgba(50, 128, 111, 0.18);
+      --timeline-phd-bg: rgba(238, 250, 246, 0.98);
+      --timeline-node-border: rgba(41, 74, 115, 0.22);
+      --timeline-node-shadow: 0 0 0 2px rgba(41, 74, 115, 0.08);
+      --timeline-node-pulse-start-outer: rgba(41, 74, 115, 0.14);
+      --timeline-node-pulse-start-inner: rgba(41, 74, 115, 0.08);
+      --timeline-node-pulse-mid-outer: rgba(41, 74, 115, 0.03);
+      --timeline-node-pulse-mid-inner: rgba(41, 74, 115, 0.12);
+      --timeline-pill-active-border: rgba(41, 74, 115, 0.18);
+      --timeline-pill-active-bg: rgba(255, 255, 255, 0.94);
+      --timeline-pill-active-color: var(--accent-strong);
+      --timeline-pill-active-shadow: 0 0 0 1px rgba(41, 74, 115, 0.04);
+      --timeline-award-label-color: #9a6a18;
+      --timeline-award-label-icon-border: rgba(190, 149, 34, 0.18);
+      --timeline-award-label-icon-bg: rgba(255, 248, 226, 0.96);
+      --timeline-paper-label-color: var(--accent);
+      --timeline-talk-label-color: var(--accent);
+      --timeline-writing-label-color: #5d4c83;
+      --timeline-phd-label-color: var(--accent);
+      --timeline-label-icon-border: rgba(41, 74, 115, 0.12);
+      --timeline-label-icon-bg: rgba(255, 255, 255, 0.84);
+      --timeline-label-icon-shadow: 0 1px 2px rgba(23, 38, 59, 0.04);
+      --timeline-pill-icon-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.58);
+      --timeline-award-active-border: rgba(190, 149, 34, 0.28);
+      --timeline-award-active-bg: rgba(255, 246, 214, 0.96);
+      --timeline-talk-active-border: rgba(13, 120, 137, 0.24);
+      --timeline-talk-active-bg: rgba(224, 246, 250, 0.98);
+      --timeline-writing-active-border: rgba(112, 84, 168, 0.22);
+      --timeline-writing-active-bg: rgba(245, 239, 255, 0.98);
+      --timeline-phd-active-border: rgba(50, 128, 111, 0.26);
+      --timeline-phd-active-bg: rgba(232, 248, 242, 0.98);
+      --detail-glow: rgba(41, 74, 115, 0.08);
+      --detail-shadow: 0 12px 26px rgba(23, 38, 59, 0.06);
+      --detail-bullet: rgba(91, 106, 133, 0.52);
+      --detail-bullet-shadow: none;
+      --atlas-border: rgba(15, 23, 42, 0.08);
+      --atlas-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.985), rgba(248, 250, 252, 0.965));
+      --atlas-shadow: 0 18px 36px rgba(15, 23, 42, 0.07), inset 0 1px 0 rgba(255, 255, 255, 0.88);
+      --atlas-grid-line: rgba(148, 163, 184, 0.05);
+      --atlas-stage-border: rgba(15, 23, 42, 0.08);
+      --atlas-stage-bg: rgba(255, 255, 255, 0.92);
+      --atlas-stage-glow: linear-gradient(180deg, rgba(15, 23, 42, 0.018), transparent 38%);
+      --map-switch-border: rgba(15, 23, 42, 0.08);
+      --map-switch-bg: rgba(248, 250, 252, 0.88);
+      --map-switch-text: rgba(71, 85, 105, 0.8);
+      --map-switch-count: #64748b;
+      --map-switch-hover: #0f172a;
+      --map-switch-active-bg: rgba(15, 23, 42, 0.08);
+      --map-switch-active-text: #0f172a;
+      --map-switch-active-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.08);
+      --registry-border: rgba(15, 23, 42, 0.08);
+      --registry-label: #64748b;
+      --registry-cell-bg: rgba(255, 255, 255, 0.96);
+      --registry-cell-text: #0f172a;
+      --registry-cell-hover-bg: rgba(241, 245, 249, 0.96);
+      --registry-cell-hover-border: rgba(15, 23, 42, 0.18);
+      --radius: 24px;
+      --maxw: 1160px;
+      --mail-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2317263b' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3.25' y='5.75' width='17.5' height='12.5' rx='1.75'/%3E%3Cpath d='m4.4 7.2 7.6 5.8 7.6-5.8'/%3E%3C/svg%3E");
+      --github-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2317263b' d='M12 .7C5.76.7.7 5.76.7 12c0 4.99 3.23 9.23 7.72 10.72.57.11.77-.24.77-.55 0-.27-.01-.99-.02-1.95-3.14.68-3.8-1.51-3.8-1.51-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.64 1.23 3.28.94.1-.73.39-1.23.71-1.51-2.5-.28-5.14-1.25-5.14-5.61 0-1.24.44-2.25 1.17-3.05-.12-.29-.51-1.43.11-3 0 0 .95-.3 3.11 1.17.9-.25 1.88-.38 2.84-.38s1.94.13 2.84.38c2.16-1.47 3.11-1.17 3.11-1.17.62 1.57.23 2.71.11 3 .73.8 1.17 1.81 1.17 3.05 0 4.37-2.64 5.33-5.15 5.61.4.34.76 1.01.76 2.04 0 1.47-.01 2.66-.01 3.02 0 .3.2.66.78.55A11.31 11.31 0 0 0 23.3 12C23.3 5.76 18.24.7 12 .7Z'/%3E%3C/svg%3E");
+      --x-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2317263b' d='M14.12 10.15 21.56 1.5h-1.76l-6.46 7.51L8.18 1.5H2.23l7.8 11.35L2.23 21.9h1.76l6.82-7.92 5.43 7.92h5.95zm-2.42 2.81-.79-1.13L4.62 2.86h2.71l5.08 7.27.79 1.13 6.6 9.45h-2.71z'/%3E%3C/svg%3E");
+      --coffee-icon: url("assets/cmg-mark.svg");
+      --play-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2317263b' d='M21.16 8.2a2.7 2.7 0 0 0-1.9-1.9c-1.68-.45-7.26-.45-7.26-.45s-5.58 0-7.26.45a2.7 2.7 0 0 0-1.9 1.9A28.7 28.7 0 0 0 2.4 12c0 1.3.15 2.61.44 3.8a2.7 2.7 0 0 0 1.9 1.9c1.68.45 7.26.45 7.26.45s5.58 0 7.26-.45a2.7 2.7 0 0 0 1.9-1.9c.29-1.19.44-2.5.44-3.8s-.15-2.61-.44-3.8Z'/%3E%3Cpath fill='%23fff' d='m10.2 15.3 5.15-3.3-5.15-3.3Z'/%3E%3C/svg%3E");
+      --paper-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%232f628f' d='M7.75 3.5h6.7L19.5 8.05V19A1.5 1.5 0 0 1 18 20.5H7.75A1.75 1.75 0 0 1 6 18.75V5.25A1.75 1.75 0 0 1 7.75 3.5Z'/%3E%3Cpath fill='%23fff' d='M14.45 3.5v4.6h5.05'/%3E%3Cpath fill='%23fff' d='M8.7 11.2h6.7v1.55H8.7z'/%3E%3Cpath fill='%23fff' d='M8.7 14.6h5.5v1.55H8.7z'/%3E%3C/svg%3E");
+      --talk-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%230f7386' d='M12 3.25a3.25 3.25 0 0 1 3.25 3.25v4.6a3.25 3.25 0 1 1-6.5 0V6.5A3.25 3.25 0 0 1 12 3.25Z'/%3E%3Cpath fill='%230f7386' d='M6.5 11.05h1.5a4 4 0 0 0 8 0h1.5a5.49 5.49 0 0 1-4.75 5.43v2.02h3.35V20h-8.2v-1.5h3.35v-2.02A5.49 5.49 0 0 1 6.5 11.05Z'/%3E%3C/svg%3E");
+      --writing-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%236c53a0' d='M4.75 16.2 15.9 5.05a1.8 1.8 0 0 1 2.55 0l.5.5a1.8 1.8 0 0 1 0 2.55L7.8 19.25l-3.55.75z'/%3E%3Cpath fill='%23fff' d='m14.9 6.05 3.05 3.05-1.05 1.05-3.05-3.05z'/%3E%3C/svg%3E");
+      --phd-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232f7a6d' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 9.5 12 5l9 4.5-9 4.5L3 9.5Z'/%3E%3Cpath d='M7 12.5V16c0 .9 2.2 2.2 5 2.2s5-1.3 5-2.2v-3.5'/%3E%3C/svg%3E");
+      --award-icon: url("assets/award.png");
+    }
+
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #0f1723;
+      --bg-soft: #162131;
+      --bg-gradient-start: #142034;
+      --bg-glow-top: rgba(138, 182, 255, 0.12);
+      --bg-glow-bottom: rgba(216, 148, 88, 0.04);
+      --bg-fade: rgba(15, 23, 35, 0);
+      --surface: rgba(21, 30, 45, 0.84);
+      --surface-strong: rgba(27, 38, 56, 0.96);
+      --text: #eaf1fa;
+      --muted: #9fb0c5;
+      --accent: #8ab6ff;
+      --accent-strong: #dbe9ff;
+      --accent-warm: #d89458;
+      --accent-warm-strong: #f0c39b;
+      --line: rgba(219, 233, 255, 0.11);
+      --shadow: 0 20px 48px rgba(0, 0, 0, 0.36);
+      --header-bg: rgba(10, 16, 27, 0.84);
+      --header-border: rgba(219, 233, 255, 0.08);
+      --interactive-bg: rgba(24, 35, 52, 0.78);
+      --interactive-bg-soft: rgba(23, 34, 50, 0.74);
+      --interactive-bg-strong: rgba(29, 43, 63, 0.92);
+      --interactive-border: rgba(138, 182, 255, 0.18);
+      --interactive-border-strong: rgba(138, 182, 255, 0.32);
+      --interactive-shadow: 0 1px 2px rgba(0, 0, 0, 0.28);
+      --interactive-shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.32);
+      --section-chip-shadow: 0 12px 28px rgba(0, 0, 0, 0.34);
+      --summary-bg: rgba(255, 255, 255, 0.035);
+      --theme-toggle-border: rgba(138, 182, 255, 0.18);
+      --theme-toggle-hover-bg: rgba(35, 50, 74, 0.94);
+      --theme-toggle-hover-border: rgba(138, 182, 255, 0.32);
+      --theme-toggle-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+      --timeline-rail: linear-gradient(90deg, rgba(138, 182, 255, 0.11), rgba(138, 182, 255, 0.24), rgba(138, 182, 255, 0.11));
+      --timeline-pill-border: rgba(138, 182, 255, 0.16);
+      --timeline-pill-bg: rgba(21, 31, 47, 0.96);
+      --timeline-pill-icon-border: rgba(189, 215, 255, 0.18);
+      --timeline-paper-bg: linear-gradient(180deg, rgba(74, 97, 137, 0.88), rgba(40, 57, 82, 0.96));
+      --timeline-milestone-bg: linear-gradient(180deg, rgba(33, 47, 69, 0.96), rgba(22, 32, 48, 0.98));
+      --timeline-award-border: rgba(216, 148, 88, 0.24);
+      --timeline-award-bg: rgba(72, 52, 31, 0.92);
+      --timeline-talk-border: rgba(109, 228, 234, 0.22);
+      --timeline-talk-bg: linear-gradient(180deg, rgba(34, 107, 123, 0.9), rgba(19, 63, 75, 0.98));
+      --timeline-writing-border: rgba(191, 165, 236, 0.22);
+      --timeline-writing-bg: linear-gradient(180deg, rgba(95, 77, 129, 0.88), rgba(56, 47, 76, 0.96));
+      --timeline-phd-border: rgba(123, 225, 193, 0.22);
+      --timeline-phd-bg: linear-gradient(180deg, rgba(45, 97, 85, 0.9), rgba(26, 58, 52, 0.98));
+      --timeline-node-border: rgba(138, 182, 255, 0.26);
+      --timeline-node-shadow: 0 0 0 2px rgba(138, 182, 255, 0.12);
+      --timeline-node-pulse-start-outer: rgba(138, 182, 255, 0.16);
+      --timeline-node-pulse-start-inner: rgba(138, 182, 255, 0.12);
+      --timeline-node-pulse-mid-outer: rgba(138, 182, 255, 0.05);
+      --timeline-node-pulse-mid-inner: rgba(138, 182, 255, 0.14);
+      --timeline-pill-active-border: rgba(138, 182, 255, 0.24);
+      --timeline-pill-active-bg: linear-gradient(180deg, rgba(38, 54, 80, 0.96), rgba(29, 42, 62, 0.98));
+      --timeline-pill-active-color: #dbe9ff;
+      --timeline-pill-active-shadow: 0 0 0 1px rgba(138, 182, 255, 0.1);
+      --timeline-award-label-color: #f0c39b;
+      --timeline-award-label-icon-border: rgba(216, 148, 88, 0.22);
+      --timeline-award-label-icon-bg: linear-gradient(180deg, rgba(88, 63, 37, 0.96), rgba(58, 41, 25, 0.98));
+      --timeline-paper-label-color: #d8e5fb;
+      --timeline-talk-label-color: #d3e2f8;
+      --timeline-writing-label-color: #dccff7;
+      --timeline-phd-label-color: #d4e3fb;
+      --timeline-label-icon-border: rgba(138, 182, 255, 0.16);
+      --timeline-label-icon-bg: linear-gradient(180deg, rgba(32, 46, 69, 0.96), rgba(22, 33, 49, 0.98));
+      --timeline-label-icon-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 4px 10px rgba(0, 0, 0, 0.16);
+      --timeline-pill-icon-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 1px 2px rgba(0, 0, 0, 0.22);
+      --timeline-award-active-border: rgba(216, 148, 88, 0.3);
+      --timeline-award-active-bg: rgba(84, 60, 35, 0.96);
+      --timeline-talk-active-border: rgba(109, 228, 234, 0.24);
+      --timeline-talk-active-bg: linear-gradient(180deg, rgba(42, 126, 144, 0.92), rgba(24, 73, 86, 0.98));
+      --timeline-writing-active-border: rgba(159, 140, 198, 0.26);
+      --timeline-writing-active-bg: linear-gradient(180deg, rgba(106, 86, 142, 0.9), rgba(64, 53, 84, 0.98));
+      --timeline-phd-active-border: rgba(123, 225, 193, 0.24);
+      --timeline-phd-active-bg: linear-gradient(180deg, rgba(57, 118, 104, 0.92), rgba(33, 70, 63, 0.98));
+      --detail-glow: rgba(138, 182, 255, 0.09);
+      --detail-shadow: 0 18px 36px rgba(0, 0, 0, 0.3);
+      --detail-bullet: rgba(159, 176, 197, 0.42);
+      --detail-bullet-shadow: none;
+      --atlas-border: rgba(219, 233, 255, 0.08);
+      --atlas-bg: linear-gradient(180deg, rgba(20, 30, 45, 0.98), rgba(16, 24, 36, 0.98));
+      --atlas-shadow: 0 18px 36px rgba(0, 0, 0, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      --atlas-grid-line: rgba(219, 233, 255, 0.04);
+      --atlas-stage-border: rgba(219, 233, 255, 0.1);
+      --atlas-stage-bg: rgba(19, 28, 42, 0.94);
+      --atlas-stage-glow: linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 38%);
+      --map-switch-border: rgba(219, 233, 255, 0.1);
+      --map-switch-bg: rgba(23, 33, 49, 0.88);
+      --map-switch-text: rgba(167, 182, 204, 0.84);
+      --map-switch-count: #9aacc6;
+      --map-switch-hover: #eaf1fa;
+      --map-switch-active-bg: rgba(138, 182, 255, 0.16);
+      --map-switch-active-text: #eaf1fa;
+      --map-switch-active-shadow: inset 0 0 0 1px rgba(138, 182, 255, 0.2);
+      --registry-border: rgba(219, 233, 255, 0.08);
+      --registry-label: #9aacc6;
+      --registry-cell-bg: rgba(21, 31, 47, 0.96);
+      --registry-cell-text: #eaf1fa;
+      --registry-cell-hover-bg: rgba(27, 39, 58, 0.96);
+      --registry-cell-hover-border: rgba(138, 182, 255, 0.22);
+      --mail-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23eaf1fa' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3.25' y='5.75' width='17.5' height='12.5' rx='1.75'/%3E%3Cpath d='m4.4 7.2 7.6 5.8 7.6-5.8'/%3E%3C/svg%3E");
+      --github-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23eaf1fa' d='M12 .7C5.76.7.7 5.76.7 12c0 4.99 3.23 9.23 7.72 10.72.57.11.77-.24.77-.55 0-.27-.01-.99-.02-1.95-3.14.68-3.8-1.51-3.8-1.51-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.64 1.23 3.28.94.1-.73.39-1.23.71-1.51-2.5-.28-5.14-1.25-5.14-5.61 0-1.24.44-2.25 1.17-3.05-.12-.29-.51-1.43.11-3 0 0 .95-.3 3.11 1.17.9-.25 1.88-.38 2.84-.38s1.94.13 2.84.38c2.16-1.47 3.11-1.17 3.11-1.17.62 1.57.23 2.71.11 3 .73.8 1.17 1.81 1.17 3.05 0 4.37-2.64 5.33-5.15 5.61.4.34.76 1.01.76 2.04 0 1.47-.01 2.66-.01 3.02 0 .3.2.66.78.55A11.31 11.31 0 0 0 23.3 12C23.3 5.76 18.24.7 12 .7Z'/%3E%3C/svg%3E");
+      --x-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23eaf1fa' d='M14.12 10.15 21.56 1.5h-1.76l-6.46 7.51L8.18 1.5H2.23l7.8 11.35L2.23 21.9h1.76l6.82-7.92 5.43 7.92h5.95zm-2.42 2.81-.79-1.13L4.62 2.86h2.71l5.08 7.27.79 1.13 6.6 9.45h-2.71z'/%3E%3C/svg%3E");
+      --play-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23eaf1fa' d='M21.16 8.2a2.7 2.7 0 0 0-1.9-1.9c-1.68-.45-7.26-.45-7.26-.45s-5.58 0-7.26.45a2.7 2.7 0 0 0-1.9 1.9A28.7 28.7 0 0 0 2.4 12c0 1.3.15 2.61.44 3.8a2.7 2.7 0 0 0 1.9 1.9c1.68.45 7.26.45 7.26.45s5.58 0 7.26-.45a2.7 2.7 0 0 0 1.9-1.9c.29-1.19.44-2.5.44-3.8s-.15-2.61-.44-3.8Z'/%3E%3Cpath fill='%230f1723' d='m10.2 15.3 5.15-3.3-5.15-3.3Z'/%3E%3C/svg%3E");
+      --paper-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23d7e6ff' d='M7.75 3.5h6.7L19.5 8.05V19A1.5 1.5 0 0 1 18 20.5H7.75A1.75 1.75 0 0 1 6 18.75V5.25A1.75 1.75 0 0 1 7.75 3.5Z'/%3E%3Cpath fill='%23162537' d='M14.45 3.5v4.6h5.05'/%3E%3Cpath fill='%23162537' d='M8.7 11.2h6.7v1.55H8.7z'/%3E%3Cpath fill='%23162537' d='M8.7 14.6h5.5v1.55H8.7z'/%3E%3C/svg%3E");
+      --talk-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%239fe7ef' d='M12 3.25a3.25 3.25 0 0 1 3.25 3.25v4.6a3.25 3.25 0 1 1-6.5 0V6.5A3.25 3.25 0 0 1 12 3.25Z'/%3E%3Cpath fill='%239fe7ef' d='M6.5 11.05h1.5a4 4 0 0 0 8 0h1.5a5.49 5.49 0 0 1-4.75 5.43v2.02h3.35V20h-8.2v-1.5h3.35v-2.02A5.49 5.49 0 0 1 6.5 11.05Z'/%3E%3C/svg%3E");
+      --writing-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23dccff7' d='M4.75 16.2 15.9 5.05a1.8 1.8 0 0 1 2.55 0l.5.5a1.8 1.8 0 0 1 0 2.55L7.8 19.25l-3.55.75z'/%3E%3Cpath fill='%23162537' d='m14.9 6.05 3.05 3.05-1.05 1.05-3.05-3.05z'/%3E%3C/svg%3E");
+      --phd-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23bde8d8' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 9.5 12 5l9 4.5-9 4.5L3 9.5Z'/%3E%3Cpath d='M7 12.5V16c0 .9 2.2 2.2 5 2.2s5-1.3 5-2.2v-3.5'/%3E%3C/svg%3E");
+      --award-icon: url("assets/award.png");
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background:
+        radial-gradient(circle at 108% -10%, var(--bg-glow-top), transparent 34%),
+        radial-gradient(circle at -8% 100%, var(--bg-glow-bottom), transparent 28%),
+        linear-gradient(180deg, var(--bg-gradient-start) 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.72;
+      transition: background 0.25s ease, color 0.25s ease;
+    }
+
+    a {
+      color: inherit;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.16em;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    [id] {
+      scroll-margin-top: 96px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      padding: 0.55rem 0.8rem;
+      background: var(--text);
+      color: var(--bg-soft);
+      border-radius: 0 0 8px 0;
+    }
+
+    .skip-link:focus {
+      left: 0;
+    }
+
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 40;
+      background: var(--header-bg);
+      -webkit-backdrop-filter: saturate(140%) blur(12px);
+      backdrop-filter: saturate(140%) blur(12px);
+      border-bottom: 1px solid var(--header-border);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .site-header.is-revealed {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .site-header-inner {
+      width: min(var(--maxw), 100%);
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0.68rem 1.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      opacity: 0;
+      transform: translateY(-0.75rem);
+      transition: transform 0.28s ease, opacity 0.28s ease;
+      will-change: transform, opacity;
+    }
+
+    .site-header.is-revealed .site-header-inner {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .header-actions {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      min-width: 0;
+    }
+
+    .site-header nav {
+      display: flex;
+      flex: 1 1 auto;
+      flex-wrap: wrap;
+      gap: 1.1rem;
+      min-width: 0;
+    }
+
+    .site-header nav a {
+      color: var(--muted);
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .site-header nav a:hover {
+      color: var(--text);
+    }
+
+    .theme-toggle {
+      appearance: none;
+      -webkit-appearance: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.35rem;
+      height: 2.35rem;
+      padding: 0;
+      border: 1px solid var(--theme-toggle-border);
+      border-radius: 999px;
+      background: var(--theme-toggle-bg);
+      color: var(--muted);
+      cursor: pointer;
+      font: inherit;
+      line-height: 1;
+      transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .theme-toggle:hover {
+      color: var(--text);
+      background: var(--theme-toggle-hover-bg);
+      border-color: var(--theme-toggle-hover-border);
+    }
+
+    .theme-toggle:active {
+      transform: scale(0.94);
+    }
+
+    .theme-toggle svg {
+      width: 1.05rem;
+      height: 1.05rem;
+      display: block;
+    }
+
+    .theme-toggle .icon-sun {
+      display: none;
+    }
+
+    :root[data-theme="dark"] .theme-toggle .icon-sun {
+      display: block;
+    }
+
+    :root[data-theme="dark"] .theme-toggle .icon-moon {
+      display: none;
+    }
+
+    .theme-toggle--floating {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 50;
+      width: 2.75rem;
+      height: 2.75rem;
+      background: var(--header-bg);
+      box-shadow: var(--theme-toggle-shadow);
+      opacity: 1;
+      visibility: visible;
+      transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+    }
+
+    .theme-toggle--floating svg {
+      width: 1.18rem;
+      height: 1.18rem;
+    }
+
+    body.header-revealed .theme-toggle--floating {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .page {
+      width: min(var(--maxw), calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2rem 0 3.2rem;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.28fr);
+      gap: clamp(1.5rem, 4vw, 4rem);
+      align-items: center;
+      min-height: 72vh;
+      padding: 2.5rem 0 0.95rem;
+    }
+
+    .role {
+      margin: 0 0 1rem;
+      color: var(--accent-warm);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    summary {
+      letter-spacing: -0.04em;
+    }
+
+    h1 {
+      margin: 0 0 0.45rem;
+      font-size: clamp(2.7rem, 5.4vw, 4.25rem);
+      line-height: 0.98;
+      max-width: none;
+      white-space: nowrap;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.75rem;
+    }
+
+    h3 {
+      margin: 0.15rem 0 0.35rem;
+      font-size: 1.22rem;
+    }
+
+    p,
+    li {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .hero-copy {
+      align-self: center;
+    }
+
+    .hero-copy p {
+      max-width: 56ch;
+      font-size: 1.05rem;
+      text-wrap: pretty;
+    }
+
+    .lead {
+      color: var(--text);
+      font-size: clamp(1.12rem, 2.2vw, 1.28rem);
+      line-height: 1.52;
+      text-wrap: balance;
+    }
+
+    .hero-copy p + p {
+      margin-top: 1rem;
+    }
+
+    .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1.35rem;
+    }
+
+    .link-row a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      min-height: 2.8rem;
+      padding: 0.68rem 1.05rem;
+      border: 1px solid var(--interactive-border);
+      border-radius: 999px;
+      background: var(--interactive-bg-soft);
+      color: var(--text);
+      font-weight: 600;
+      line-height: 1;
+      white-space: nowrap;
+      text-decoration: none;
+      box-shadow: var(--interactive-shadow);
+      transition: transform 160ms ease, background 160ms ease, border-color 160ms ease, box-shadow 160ms ease, color 160ms ease;
+    }
+
+    .link-row a::before {
+      content: "";
+      width: 1rem;
+      height: 1rem;
+      flex: 0 0 1rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 1rem 1rem;
+      opacity: 0.92;
+    }
+
+    .link-row a:hover {
+      transform: translateY(-1px);
+      background: var(--interactive-bg-strong);
+      border-color: var(--interactive-border-strong);
+      box-shadow: var(--interactive-shadow-hover);
+      color: var(--accent);
+    }
+
+    .link-row a.is-email::before {
+      background-image: var(--mail-icon);
+    }
+
+    .link-row a.is-github::before {
+      background-image: var(--github-icon);
+    }
+
+    .link-row a.is-x::before {
+      background-image: var(--x-icon);
+    }
+
+    .link-row a.is-cmg::before {
+      background-color: currentColor;
+      -webkit-mask: var(--coffee-icon) center / contain no-repeat;
+      mask: var(--coffee-icon) center / contain no-repeat;
+      opacity: 1;
+    }
+
+    .link-row a.is-icon-only {
+      width: 2.8rem;
+      min-width: 2.8rem;
+      padding: 0;
+      gap: 0;
+    }
+
+    .link-row a.is-icon-only::before {
+      width: 1.08rem;
+      height: 1.08rem;
+      flex: 0 0 1.08rem;
+    }
+
+    .portrait-card {
+      padding: 1rem;
+      max-width: 360px;
+      border: 1px solid var(--line);
+      border-radius: calc(var(--radius) + 4px);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      justify-self: start;
+    }
+
+    .portrait-media {
+      overflow: hidden;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .portrait-card img {
+      display: block;
+      width: 100%;
+      max-width: none;
+      transform: scale(1.003);
+      transform-origin: center;
+    }
+
+    .portrait-note {
+      margin-top: 0.9rem;
+      font-size: 0.92rem;
+    }
+
+    .section-shell {
+      position: relative;
+      display: grid;
+      grid-template-columns: 130px minmax(0, 1fr);
+      gap: clamp(1.25rem, 3vw, 3rem);
+      padding: 1.8rem 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-label {
+      padding-top: 0.35rem;
+      color: var(--accent-warm);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .section-shell--chip {
+      padding-top: 2.35rem;
+      border-top: 0;
+    }
+
+    .section-shell--chip::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: var(--line);
+    }
+
+    .section-shell--chip .section-label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      padding: 0.48rem 0.84rem;
+      border: 1px solid var(--interactive-border);
+      border-radius: 999px;
+      background: var(--surface-strong);
+      box-shadow: var(--section-chip-shadow);
+      color: var(--accent-warm);
+      font-size: 0.79rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: none;
+      transform: translateY(-50%);
+    }
+
+    .section-shell--chip .section-content {
+      grid-column: 2;
+    }
+
+    .section-shell--timeline .research-shell {
+      gap: 0.96rem;
+    }
+
+    .section-shell--timeline .research-stage {
+      gap: 0.92rem;
+    }
+
+    .section-shell--timeline::before {
+      z-index: 0;
+    }
+
+    .section-shell--timeline .section-label {
+      z-index: 2;
+    }
+
+    .section-shell--timeline .section-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-shell--timeline .research-selector {
+      --research-stop-width: 114px;
+      --research-top-bleed: 0.72rem;
+      --research-year-transform: translate(-50%, 0);
+      --research-year-row-top: calc(0.72rem + var(--research-year-gap));
+      --research-pill-row-top: calc(0.72rem + var(--research-year-gap) + var(--research-year-size) + var(--research-pill-gap));
+      margin-top: calc(-2.71rem - var(--research-top-bleed));
+      padding-top: 0;
+      overflow: visible;
+    }
+
+    .section-shell--timeline .research-selector::before,
+    .section-shell--timeline .research-selector::after {
+      display: none;
+    }
+
+    .section-shell--timeline .research-track {
+      overflow-y: visible;
+      padding: var(--research-top-bleed) 0.12rem 0.28rem calc(var(--research-label-clearance, 10rem) + 0.12rem);
+    }
+
+    .section-shell--timeline .research-rail {
+      padding: 0 0.12rem 0.08rem;
+    }
+
+    .section-shell--timeline .research-rail::before {
+      display: none;
+    }
+
+    .section-shell--timeline .research-stop {
+      min-height: 4.08rem;
+      padding: 0;
+    }
+
+    .section-shell--timeline .research-meta {
+      top: var(--research-pill-row-top);
+    }
+
+    .section-shell--timeline .research-year {
+      top: var(--research-year-row-top);
+      transform: translate(-50%, 0);
+    }
+
+    .section-shell--timeline .research-node {
+      top: 0;
+      z-index: 2;
+    }
+
+    .section-shell--timeline .award-strip {
+      order: 3;
+      margin-top: 0.12rem;
+    }
+
+    .section-content > p + p {
+      margin-top: 1rem;
+    }
+
+    .entry {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr);
+      align-items: start;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .entry:last-child {
+      border-bottom: 0;
+    }
+
+    .entry-time {
+      color: var(--accent-warm);
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .entry-copy p {
+      max-width: 68ch;
+    }
+
+    .entry-copy h3 {
+      margin-top: 0;
+      line-height: 1.1;
+    }
+
+    .entry-preview {
+      display: grid;
+      gap: 0.72rem;
+      margin-top: 1rem;
+      max-width: min(100%, 38rem);
+    }
+
+    .work-link-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      align-items: center;
+    }
+
+    .work-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      width: fit-content;
+      min-height: 2.35rem;
+      padding: 0.58rem 0.92rem;
+      border: 1px solid var(--interactive-border);
+      border-radius: 999px;
+      background: var(--interactive-bg);
+      color: var(--text);
+      font-weight: 600;
+      line-height: 1;
+      text-decoration: none;
+      box-shadow: var(--interactive-shadow);
+      transition: transform 160ms ease, background 160ms ease, border-color 160ms ease, box-shadow 160ms ease, color 160ms ease;
+    }
+
+    .work-link::before {
+      content: "";
+      width: 0.95rem;
+      height: 0.95rem;
+      flex: 0 0 0.95rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.92;
+    }
+
+    .work-link.is-site::before {
+      background-color: currentColor;
+      -webkit-mask: var(--coffee-icon) center / contain no-repeat;
+      mask: var(--coffee-icon) center / contain no-repeat;
+      opacity: 1;
+    }
+
+    .work-link.is-trailer::before {
+      width: 1.38rem;
+      height: 1.38rem;
+      flex: 0 0 1.38rem;
+      background-color: transparent;
+      background-image: var(--play-icon);
+      -webkit-mask: none;
+      mask: none;
+      background-size: 1.38rem 1.38rem;
+    }
+
+    .work-link:hover {
+      transform: translateY(-1px);
+      background: var(--interactive-bg-strong);
+      border-color: var(--interactive-border-strong);
+      box-shadow: var(--interactive-shadow-hover);
+      color: var(--accent);
+    }
+
+    .work-preview-strip {
+      display: flex;
+      gap: 0.68rem;
+      overflow-x: auto;
+      padding-bottom: 0.2rem;
+      scrollbar-width: thin;
+      scroll-snap-type: x proximity;
+    }
+
+    .work-preview-card {
+      flex: 0 0 clamp(4.35rem, 9.2vw, 5.3rem);
+      width: clamp(4.35rem, 9.2vw, 5.3rem);
+      aspect-ratio: 9 / 16;
+      border: 1px solid var(--interactive-border);
+      border-radius: 16px;
+      overflow: hidden;
+      background: var(--interactive-bg-strong);
+      box-shadow: none;
+      scroll-snap-align: start;
+      transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+    }
+
+    .work-preview-card:hover {
+      transform: translateY(-1px);
+      border-color: var(--interactive-border-strong);
+      box-shadow: 0 0 0 1px var(--interactive-border);
+    }
+
+    .work-preview-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    #work .entry-copy p {
+      max-width: 72ch;
+    }
+
+    .archive {
+      display: grid;
+      gap: 0.85rem;
+      margin-top: 1rem;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 0.95rem 1rem;
+      list-style: none;
+      font-weight: 600;
+      color: var(--text);
+      background: var(--summary-bg);
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details[open] summary {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .details-body {
+      padding: 0 1rem 1rem;
+    }
+
+    .details-body ol,
+    .details-body ul {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    .details-body li + li {
+      margin-top: 0.75rem;
+    }
+
+    .research-shell {
+      display: grid;
+      gap: 0.82rem;
+    }
+
+    .scholar-link {
+      text-decoration: none;
+      color: var(--accent);
+    }
+
+    .scholar-link svg {
+      width: 15px;
+      height: 15px;
+      flex: 0 0 15px;
+      fill: none;
+      stroke: currentColor;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 1.7;
+    }
+
+    .award-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.48rem;
+    }
+
+    .award-strip > .scholar-link {
+      margin-left: auto;
+    }
+
+    .award-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.38rem;
+      min-height: 2.05rem;
+      padding: 0.34rem 0.64rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface-strong);
+      box-shadow: 0 10px 22px rgba(23, 38, 59, 0.05);
+      color: var(--text);
+      font-size: 0.82rem;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .award-chip-button {
+      -webkit-appearance: none;
+      appearance: none;
+      font: inherit;
+      line-height: inherit;
+      text-align: left;
+    }
+
+    .award-icon {
+      width: 13px;
+      height: 13px;
+      flex: 0 0 13px;
+      opacity: 0.85;
+    }
+
+    .research-stage {
+      display: grid;
+      gap: 0.72rem;
+      align-items: start;
+    }
+
+    .research-stage input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .research-selector {
+      --research-stop-width: 112px;
+      --research-gap: 0.34rem;
+      --research-node-top: 2.94rem;
+      --research-pill-gap: 0.34rem;
+      --research-year-gap: 0.64rem;
+      --research-pill-height: 1.46rem;
+      --research-year-size: 0.76rem;
+      --research-year-transform: translate(-50%, -100%);
+      position: relative;
+      width: 100%;
+      min-width: 0;
+      overflow: hidden;
+      margin-inline: -0.08rem;
+      padding-inline: 0.08rem;
+    }
+
+    .research-selector::before,
+    .research-selector::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0.48rem;
+      width: 2rem;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .research-selector::before {
+      left: 0;
+      background: linear-gradient(90deg, var(--bg) 14%, var(--bg-fade));
+    }
+
+    .research-selector::after {
+      right: 0;
+      background: linear-gradient(270deg, var(--bg) 14%, var(--bg-fade));
+    }
+
+    .research-track {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding: 0.22rem 1.24rem 0.22rem 0.12rem;
+      scroll-padding-inline: 0.12rem;
+      scroll-snap-type: x proximity;
+      overscroll-behavior-x: contain;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .research-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .research-rail {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      gap: var(--research-gap);
+      width: max-content;
+      padding: 0.18rem 0.12rem 0.08rem;
+    }
+
+    .research-rail::before {
+      content: "";
+      position: absolute;
+      left: calc(var(--research-stop-width) / 2);
+      right: calc(var(--research-stop-width) / 2);
+      top: calc(var(--research-node-top) + 0.36rem);
+      height: 1px;
+      background: var(--timeline-rail);
+    }
+
+    .research-row {
+      position: relative;
+      flex: 0 0 var(--research-stop-width);
+      min-width: var(--research-stop-width);
+      display: block;
+      cursor: pointer;
+      scroll-snap-align: start;
+      z-index: 1;
+    }
+
+    .research-stop {
+      position: relative;
+      min-width: 0;
+      min-height: 4.08rem;
+      display: block;
+      padding: 0.08rem 0.16rem 0.04rem;
+    }
+
+    .research-head {
+      position: static;
+      width: 100%;
+      min-height: 0;
+      display: block;
+    }
+
+    .research-meta {
+      position: absolute;
+      left: 50%;
+      top: calc(var(--research-node-top) - var(--research-year-gap) - var(--research-year-size) - var(--research-pill-gap) - var(--research-pill-height));
+      display: inline-flex;
+      align-items: center;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+
+    .research-year {
+      position: absolute;
+      left: 50%;
+      top: calc(var(--research-node-top) - var(--research-year-gap));
+      display: inline-block;
+      width: max-content;
+      transform: var(--research-year-transform);
+      transform-origin: center bottom;
+      color: var(--accent-warm);
+      font-size: var(--research-year-size);
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      line-height: 1;
+      text-transform: uppercase;
+      white-space: nowrap;
+      opacity: 0.84;
+      transition: color 160ms ease, opacity 160ms ease, transform 160ms ease;
+    }
+
+    .research-total {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.2rem;
+      min-width: 2rem;
+      height: var(--research-pill-height);
+      padding: 0 0.36rem;
+      border: 1px solid var(--timeline-pill-border);
+      border-radius: 999px;
+      background: var(--timeline-pill-bg);
+      color: var(--accent);
+      font-size: 0.64rem;
+      font-weight: 700;
+      white-space: nowrap;
+      box-shadow: none;
+      transition: border-color 160ms ease, background 160ms ease, color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+    }
+
+    .research-total-value {
+      display: none;
+    }
+
+    .research-total-icon {
+      width: 0.94rem;
+      height: 0.94rem;
+      flex: 0 0 0.94rem;
+      border: 1px solid var(--timeline-pill-icon-border);
+      border-radius: 999px;
+      box-shadow: var(--timeline-pill-icon-shadow);
+      background:
+        center / 0.6rem 0.6rem no-repeat
+        var(--paper-icon),
+        var(--timeline-paper-bg);
+    }
+
+    .research-total-divider {
+      display: none;
+    }
+
+    .research-milestones {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.16rem;
+    }
+
+    .research-milestone {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 0.94rem;
+      height: 0.94rem;
+      border-radius: 999px;
+      box-shadow: var(--timeline-pill-icon-shadow);
+      background: var(--timeline-milestone-bg);
+      transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+    }
+
+    .research-milestone.is-award {
+      border: 1px solid var(--timeline-award-border);
+      background:
+        center / 0.48rem 0.48rem no-repeat
+        var(--award-icon),
+        var(--timeline-award-bg);
+    }
+
+    .research-milestone.is-talks {
+      border: 1px solid var(--timeline-talk-border);
+      background:
+        center / 0.46rem 0.46rem no-repeat
+        var(--talk-icon),
+        var(--timeline-talk-bg);
+    }
+
+    .research-milestone.is-writing {
+      border: 1px solid var(--timeline-writing-border);
+      background:
+        center / 0.44rem 0.44rem no-repeat
+        var(--writing-icon),
+        var(--timeline-writing-bg);
+    }
+
+    .research-milestone.is-phd {
+      border: 1px solid var(--timeline-phd-border);
+      background:
+        center / 0.44rem 0.44rem no-repeat
+        var(--phd-icon),
+        var(--timeline-phd-bg);
+    }
+
+    .research-node {
+      position: absolute;
+      top: var(--research-node-top);
+      left: 50%;
+      width: 0.72rem;
+      height: 0.72rem;
+      border: 1px solid var(--timeline-node-border);
+      border-radius: 999px;
+      background: var(--surface-strong);
+      box-shadow: none;
+      transform: translateX(-50%);
+      transition: border-color 160ms ease, background 160ms ease, box-shadow 160ms ease;
+    }
+
+    .research-row:hover .research-year {
+      opacity: 0.92;
+    }
+
+    .research-row:hover .research-total {
+      transform: translateY(-1px);
+    }
+
+    #research-2025:checked ~ .research-selector .research-track label[for="research-2025"] .research-node,
+    #research-2024:checked ~ .research-selector .research-track label[for="research-2024"] .research-node,
+    #research-2023:checked ~ .research-selector .research-track label[for="research-2023"] .research-node,
+    #research-2021:checked ~ .research-selector .research-track label[for="research-2021"] .research-node,
+    #research-2020:checked ~ .research-selector .research-track label[for="research-2020"] .research-node,
+    #research-2019:checked ~ .research-selector .research-track label[for="research-2019"] .research-node,
+    #research-2018:checked ~ .research-selector .research-track label[for="research-2018"] .research-node,
+    #research-2017:checked ~ .research-selector .research-track label[for="research-2017"] .research-node,
+    #research-2016:checked ~ .research-selector .research-track label[for="research-2016"] .research-node,
+    #research-2015:checked ~ .research-selector .research-track label[for="research-2015"] .research-node,
+    #research-2014:checked ~ .research-selector .research-track label[for="research-2014"] .research-node,
+    #research-2013:checked ~ .research-selector .research-track label[for="research-2013"] .research-node,
+    #research-2012:checked ~ .research-selector .research-track label[for="research-2012"] .research-node,
+    #research-2011:checked ~ .research-selector .research-track label[for="research-2011"] .research-node {
+      border-color: var(--accent);
+      background: var(--accent);
+      box-shadow: var(--timeline-node-shadow);
+      animation: research-node-pulse 2.6s ease-in-out infinite;
+    }
+
+    #research-2025:checked ~ .research-selector .research-track label[for="research-2025"] .research-year,
+    #research-2024:checked ~ .research-selector .research-track label[for="research-2024"] .research-year,
+    #research-2023:checked ~ .research-selector .research-track label[for="research-2023"] .research-year,
+    #research-2021:checked ~ .research-selector .research-track label[for="research-2021"] .research-year,
+    #research-2020:checked ~ .research-selector .research-track label[for="research-2020"] .research-year,
+    #research-2019:checked ~ .research-selector .research-track label[for="research-2019"] .research-year,
+    #research-2018:checked ~ .research-selector .research-track label[for="research-2018"] .research-year,
+    #research-2017:checked ~ .research-selector .research-track label[for="research-2017"] .research-year,
+    #research-2016:checked ~ .research-selector .research-track label[for="research-2016"] .research-year,
+    #research-2015:checked ~ .research-selector .research-track label[for="research-2015"] .research-year,
+    #research-2014:checked ~ .research-selector .research-track label[for="research-2014"] .research-year,
+    #research-2013:checked ~ .research-selector .research-track label[for="research-2013"] .research-year,
+    #research-2012:checked ~ .research-selector .research-track label[for="research-2012"] .research-year,
+    #research-2011:checked ~ .research-selector .research-track label[for="research-2011"] .research-year {
+      color: var(--accent-warm-strong);
+      opacity: 1;
+      transform: var(--research-year-transform);
+    }
+
+    #research-2025:checked ~ .research-selector .research-track label[for="research-2025"] .research-total,
+    #research-2024:checked ~ .research-selector .research-track label[for="research-2024"] .research-total,
+    #research-2023:checked ~ .research-selector .research-track label[for="research-2023"] .research-total,
+    #research-2021:checked ~ .research-selector .research-track label[for="research-2021"] .research-total,
+    #research-2020:checked ~ .research-selector .research-track label[for="research-2020"] .research-total,
+    #research-2019:checked ~ .research-selector .research-track label[for="research-2019"] .research-total,
+    #research-2018:checked ~ .research-selector .research-track label[for="research-2018"] .research-total,
+    #research-2017:checked ~ .research-selector .research-track label[for="research-2017"] .research-total,
+    #research-2016:checked ~ .research-selector .research-track label[for="research-2016"] .research-total,
+    #research-2015:checked ~ .research-selector .research-track label[for="research-2015"] .research-total,
+    #research-2014:checked ~ .research-selector .research-track label[for="research-2014"] .research-total,
+    #research-2013:checked ~ .research-selector .research-track label[for="research-2013"] .research-total,
+    #research-2012:checked ~ .research-selector .research-track label[for="research-2012"] .research-total,
+    #research-2011:checked ~ .research-selector .research-track label[for="research-2011"] .research-total {
+      border-color: var(--timeline-pill-active-border);
+      background: var(--timeline-pill-active-bg);
+      color: var(--timeline-pill-active-color);
+      box-shadow: var(--timeline-pill-active-shadow);
+      transform: translateY(-1px);
+    }
+
+    #research-2023:checked ~ .research-selector .research-track label[for="research-2023"] .research-milestone.is-award,
+    #research-2020:checked ~ .research-selector .research-track label[for="research-2020"] .research-milestone.is-award,
+    #research-2015:checked ~ .research-selector .research-track label[for="research-2015"] .research-milestone.is-award,
+    #research-2011:checked ~ .research-selector .research-track label[for="research-2011"] .research-milestone.is-award {
+      border-color: var(--timeline-award-active-border);
+      background:
+        center / 0.48rem 0.48rem no-repeat
+        var(--award-icon),
+        var(--timeline-award-active-bg);
+      transform: scale(1.03);
+    }
+
+    #research-2025:checked ~ .research-selector .research-track label[for="research-2025"] .research-milestone.is-talks,
+    #research-2021:checked ~ .research-selector .research-track label[for="research-2021"] .research-milestone.is-talks {
+      border-color: var(--timeline-talk-active-border);
+      background:
+        center / 0.46rem 0.46rem no-repeat
+        var(--talk-icon),
+        var(--timeline-talk-active-bg);
+      transform: scale(1.03);
+    }
+
+    #research-2021:checked ~ .research-selector .research-track label[for="research-2021"] .research-milestone.is-writing,
+    #research-2020:checked ~ .research-selector .research-track label[for="research-2020"] .research-milestone.is-writing {
+      border-color: var(--timeline-writing-active-border);
+      background:
+        center / 0.44rem 0.44rem no-repeat
+        var(--writing-icon),
+        var(--timeline-writing-active-bg);
+      transform: scale(1.03);
+    }
+
+    #research-2017:checked ~ .research-selector .research-track label[for="research-2017"] .research-milestone.is-phd {
+      border-color: var(--timeline-phd-active-border);
+      background:
+        center / 0.44rem 0.44rem no-repeat
+        var(--phd-icon),
+        var(--timeline-phd-active-bg);
+      transform: scale(1.03);
+    }
+
+    @keyframes research-node-pulse {
+      0%,
+      100% {
+        transform: translateX(-50%) scale(1);
+        box-shadow:
+          0 0 0 0 var(--timeline-node-pulse-start-outer),
+          0 0 0 2px var(--timeline-node-pulse-start-inner);
+      }
+
+      50% {
+        transform: translateX(-50%) scale(1.04);
+        box-shadow:
+          0 0 0 6px var(--timeline-node-pulse-mid-outer),
+          0 0 0 2px var(--timeline-node-pulse-mid-inner);
+      }
+    }
+
+
+    .research-detail {
+      display: none;
+      padding: 0.95rem 1.02rem 1.04rem;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background:
+        radial-gradient(circle at top right, var(--detail-glow), transparent 30%),
+        var(--surface);
+      box-shadow: var(--detail-shadow);
+    }
+
+    #research-2025:checked ~ .detail-2025,
+    #research-2024:checked ~ .detail-2024,
+    #research-2023:checked ~ .detail-2023,
+    #research-2021:checked ~ .detail-2021,
+    #research-2020:checked ~ .detail-2020,
+    #research-2019:checked ~ .detail-2019,
+    #research-2018:checked ~ .detail-2018,
+    #research-2017:checked ~ .detail-2017,
+    #research-2016:checked ~ .detail-2016,
+    #research-2015:checked ~ .detail-2015,
+    #research-2014:checked ~ .detail-2014,
+    #research-2013:checked ~ .detail-2013,
+    #research-2012:checked ~ .detail-2012,
+    #research-2011:checked ~ .detail-2011 {
+      display: block;
+    }
+
+    .detail-kicker {
+      color: var(--accent-warm);
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .detail-group {
+      margin-top: 0.72rem;
+    }
+
+    .detail-group-title {
+      margin-bottom: 0.34rem;
+      color: var(--accent);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .detail-group-title.with-icon {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.34rem;
+    }
+
+    .detail-group-title.is-award,
+    .detail-group-title.is-paper,
+    .detail-group-title.is-talks,
+    .detail-group-title.is-writing,
+    .detail-group-title.is-phd {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.34rem;
+    }
+
+    .detail-group-title.is-award {
+      color: var(--timeline-award-label-color);
+    }
+
+    .detail-group-title.is-paper {
+      color: var(--timeline-paper-label-color);
+    }
+
+    .detail-group-title.is-talks {
+      color: var(--timeline-talk-label-color);
+    }
+
+    .detail-group-title.is-writing {
+      color: var(--timeline-writing-label-color);
+    }
+
+    .detail-group-title.is-phd {
+      color: var(--timeline-phd-label-color);
+    }
+
+    .detail-group-title.is-award::before,
+    .detail-group-title.is-paper::before,
+    .detail-group-title.is-talks::before,
+    .detail-group-title.is-writing::before,
+    .detail-group-title.is-phd::before {
+      content: "";
+      width: 14px;
+      height: 14px;
+      flex: 0 0 14px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 10px 10px;
+      box-shadow: var(--timeline-pill-icon-shadow);
+    }
+
+    .detail-group-title.is-award::before {
+      border-color: var(--timeline-award-border);
+      background:
+        center / 10px 10px no-repeat var(--award-icon),
+        var(--timeline-award-bg);
+    }
+
+    .detail-group-title.is-paper::before {
+      border-color: var(--timeline-pill-icon-border);
+      background:
+        center / 10px 10px no-repeat var(--paper-icon),
+        var(--timeline-paper-bg);
+    }
+
+    .detail-group-title.is-talks::before {
+      border-color: var(--timeline-talk-border);
+      background:
+        center / 10px 10px no-repeat var(--talk-icon),
+        var(--timeline-talk-bg);
+    }
+
+    .detail-group-title.is-writing::before {
+      border-color: var(--timeline-writing-border);
+      background:
+        center / 10px 10px no-repeat var(--writing-icon),
+        var(--timeline-writing-bg);
+    }
+
+    .detail-group-title.is-phd::before {
+      border-color: var(--timeline-phd-border);
+      background:
+        center / 10px 10px no-repeat var(--phd-icon),
+        var(--timeline-phd-bg);
+    }
+
+    .detail-group-title.with-icon img {
+      width: 12px;
+      height: 12px;
+      flex: 0 0 12px;
+    }
+
+    .detail-list {
+      margin: 0.04rem 0 0 0.98rem;
+      padding-left: 0;
+      list-style: none;
+      display: grid;
+      gap: 0.44rem;
+    }
+
+    .detail-list li {
+      position: relative;
+      padding-left: 0.98rem;
+    }
+
+    .detail-list li::before {
+      content: "";
+      position: absolute;
+      left: 0.22rem;
+      top: 0.88em;
+      width: 0.24rem;
+      height: 0.24rem;
+      border-radius: 999px;
+      background: var(--detail-bullet);
+      box-shadow: var(--detail-bullet-shadow);
+      transform: translateY(-50%);
+    }
+
+    .detail-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-top: 0.75rem;
+    }
+
+    .detail-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.1rem;
+      padding: 0.42rem 0.72rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--interactive-bg-strong);
+      text-decoration: none;
+    }
+
+    .atlas {
+      position: relative;
+      overflow: hidden;
+      padding: 0.82rem;
+      border: 1px solid var(--atlas-border);
+      border-radius: calc(var(--radius) + 4px);
+      background: var(--atlas-bg);
+      box-shadow: var(--atlas-shadow);
+    }
+
+    .atlas::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(var(--atlas-grid-line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--atlas-grid-line) 1px, transparent 1px);
+      background-size: 72px 72px, 72px 72px;
+      mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55), transparent 72%);
+      pointer-events: none;
+    }
+
+    .atlas-stage {
+      position: relative;
+      display: grid;
+      gap: 0.45rem;
+      isolation: isolate;
+      overflow: hidden;
+      padding: 0.82rem 0.92rem 0.88rem;
+      border: 1px solid var(--atlas-stage-border);
+      border-radius: calc(var(--radius) + 2px);
+      background: var(--atlas-stage-bg);
+    }
+
+    .atlas-stage::before,
+    .atlas-stage::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .atlas-stage::before {
+      inset: 0;
+      background: var(--atlas-stage-glow);
+    }
+
+    .atlas-stage::after {
+      display: none;
+    }
+
+    .atlas-stage > input[name="atlas"] {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .map-switch {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.22rem;
+      width: fit-content;
+      padding: 0.18rem;
+      border: 1px solid var(--map-switch-border);
+      border-radius: 999px;
+      background: var(--map-switch-bg);
+    }
+
+    .map-switch label {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.42rem;
+      min-height: 1.95rem;
+      padding: 0.32rem 0.72rem;
+      border-radius: 999px;
+      background: transparent;
+      color: var(--map-switch-text);
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: background 160ms ease, color 160ms ease, box-shadow 160ms ease;
+    }
+
+    .map-switch-count {
+      color: var(--map-switch-count);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 0.72rem;
+      line-height: 1;
+    }
+
+    .map-switch label:hover {
+      color: var(--map-switch-hover);
+    }
+
+    #atlas-world:checked ~ .map-switch label[for="atlas-world"],
+    #atlas-us:checked ~ .map-switch label[for="atlas-us"] {
+      background: var(--map-switch-active-bg);
+      color: var(--map-switch-active-text);
+      box-shadow: var(--map-switch-active-shadow);
+    }
+
+    .maps {
+      position: relative;
+      z-index: 1;
+    }
+
+    .map {
+      display: none;
+    }
+
+    #atlas-world:checked ~ .maps .world-map,
+    #atlas-us:checked ~ .maps .us-map {
+      display: block;
+    }
+
+    .registry {
+      display: block;
+    }
+
+    .registry-buckets {
+      display: grid;
+      gap: 0;
+    }
+
+    .registry-bucket {
+      display: flex;
+      gap: 0.82rem;
+      align-items: flex-start;
+      padding: 0.68rem 0;
+      border-top: 1px solid var(--registry-border);
+    }
+
+    .registry-bucket:first-child {
+      padding-top: 0.08rem;
+      border-top: 0;
+    }
+
+    .registry-bucket-name {
+      margin: 0;
+      flex: 0 0 5.3rem;
+      color: var(--registry-label);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding-top: 0.38rem;
+    }
+
+    .registry-cells {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.34rem;
+      flex: 1 1 auto;
+    }
+
+    .registry-cell {
+      display: grid;
+      place-items: center;
+      min-width: 2.08rem;
+      height: 1.92rem;
+      padding: 0 0.38rem;
+      border: 1px solid var(--registry-border);
+      border-radius: 0.62rem;
+      background: var(--registry-cell-bg);
+      color: var(--registry-cell-text);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-weight: 700;
+      font-size: 0.72rem;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      transition: background 160ms ease, border-color 160ms ease;
+    }
+
+    .registry-cell:hover {
+      background: var(--registry-cell-hover-bg);
+      border-color: var(--registry-cell-hover-border);
+    }
+
+    .site-footer {
+      margin-top: 0.35rem;
+      padding-top: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-align: center;
+    }
+
+    .site-footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 920px) {
+      .site-header-inner {
+        display: grid;
+        padding: 0.72rem 1rem;
+      }
+
+      .header-actions {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      h1 {
+        white-space: normal;
+      }
+
+      .hero,
+      .section-shell,
+      .entry,
+      .topbar {
+        grid-template-columns: 1fr;
+      }
+
+      .section-shell--chip .section-content {
+        grid-column: 1;
+      }
+
+      .section-shell--timeline .research-selector {
+        margin-top: 0;
+      }
+
+      .section-shell--timeline .research-track {
+        padding-left: 0.12rem;
+      }
+
+      .research-selector {
+        --research-stop-width: 100px;
+        --research-gap: 0.28rem;
+      }
+
+      .research-track {
+        padding-right: 0.92rem;
+      }
+
+      .research-selector::before,
+      .research-selector::after {
+        width: 1.05rem;
+      }
+
+      .registry-bucket-name {
+        flex-basis: 4.9rem;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        width: min(100% - 1rem, var(--maxw));
+      }
+
+      .atlas {
+        padding: 0.8rem;
+      }
+
+      .map-switch {
+        max-width: 100%;
+      }
+
+      .registry-bucket {
+        flex-direction: column;
+        gap: 0.45rem;
+      }
+
+      .registry-bucket-name {
+        flex-basis: auto;
+        padding-top: 0;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 1rem 0 2.5rem;
+      }
+
+      .site-footer {
+        align-items: start;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .header-actions {
+        gap: 0.5rem;
+        align-items: flex-start;
+      }
+
+      .site-header nav {
+        flex: 1 1 0;
+        gap: 0.75rem;
+        padding-top: 0.32rem;
+      }
+
+      .theme-toggle--floating {
+        top: 0.75rem;
+        right: 0.75rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .site-header,
+      .site-header-inner {
+        transition: none;
+      }
+
+      .map-switch label,
+      .registry-cell,
+      .theme-toggle,
+      .theme-toggle--floating {
+        transition: none;
+      }
+
+      .research-stop,
+      .research-year,
+      .research-total,
+      .research-milestone,
+      .research-node {
+        transition: none;
+      }
+
+      .research-node {
+        animation: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <button class="theme-toggle theme-toggle--floating" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode">
+    <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z"></path>
+    </svg>
+    <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <circle cx="12" cy="12" r="4" fill="currentColor" stroke="none"></circle>
+        <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+      </g>
+    </svg>
+  </button>
+
+  <header class="site-header" aria-hidden="true">
+    <div class="site-header-inner">
+      <a class="brand" href="#top">Pantazis Deligiannis</a>
+      <div class="header-actions">
+        <nav aria-label="Section navigation">
+          <a href="#work">Work</a>
+          <a href="#studio">Studio</a>
+          <a href="#writing">Research</a>
+          <a href="#travels">Travels</a>
+          <a href="https://github.com/pdeligia" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z"></path>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <circle cx="12" cy="12" r="4" fill="currentColor" stroke="none"></circle>
+              <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <section id="top" class="hero">
+      <aside class="portrait-card">
+        <div class="portrait-media">
+          <img src="assets/me.jpg" alt="Portrait of Pantazis Deligiannis">
+        </div>
+        <p class="portrait-note">Seattle area. Outside Microsoft, I build indie games and apps, and spend time exercising, traveling, and drinking iced coffee.</p>
+      </aside>
+
+      <div class="hero-copy">
+        <h1>Pantazis Deligiannis</h1>
+        <p class="role">Principal Software Engineer, Microsoft CoreAI</p>
+        <p>
+          At Microsoft CoreAI, I build AI agent systems that analyze, plan, and execute large-scale code
+          transformations across production codebases.
+        </p>
+        <p>
+          Across nearly a decade at Microsoft, spanning CoreAI and Microsoft Research, I’ve turned research into
+          production systems used across Azure, Microsoft 365, and Windows. Before Microsoft, I earned a PhD in
+          Computing from Imperial College London.
+        </p>
+        <p>
+          I’m also the founder of Coffee Makes Games, a solo indie game studio where I built <em>Dungeon Story</em>, a match-3 dungeon
+          crawler coming to iOS. It’s where I pair end-to-end product ownership with AI-driven workflows to
+          push what one person can design, build, and ship.
+        </p>
+        <div class="link-row">
+          <a class="is-email" href="mailto:pdeligia@me.com">Get in touch</a>
+          <a class="is-github is-icon-only" href="https://github.com/pdeligia" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"></a>
+          <a class="is-x is-icon-only" href="https://x.com/pdeligia" target="_blank" rel="noreferrer" aria-label="X" title="X"></a>
+          <a class="is-cmg" href="https://coffeemakesgames.com/" target="_blank" rel="noreferrer">Coffee Makes Games</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section-shell section-shell--chip">
+      <div class="section-label">Work</div>
+      <div class="section-content">
+        <article class="entry">
+          <p class="entry-time">2025 - Present</p>
+          <div class="entry-copy">
+            <h3>Microsoft CoreAI</h3>
+            <p>Building AI agent systems that analyze, plan, and execute large-scale code transformations across production codebases, with work now powering Microsoft-scale product experiences.</p>
+          </div>
+        </article>
+        <article class="entry">
+          <p class="entry-time">2016 - 2025</p>
+          <div class="entry-copy">
+            <h3>Microsoft Research</h3>
+            <p>Led the design and implementation of <a href="https://github.com/microsoft/coyote" target="_blank" rel="noreferrer">Coyote</a>, an award-winning open-source tool for systematically finding and reproducing hard concurrency bugs in C# services, used across Azure and other Microsoft engineering groups to improve reliability before production. My work there also spanned the calculation engine behind Excel on the web, programming languages and runtimes, and later led work on an LLM-powered code transformation platform used across Azure, Microsoft 365, and Windows.</p>
+          </div>
+        </article>
+        <article id="studio" class="entry">
+          <p class="entry-time">2025 - Present</p>
+          <div class="entry-copy">
+            <h3>Coffee Makes Games</h3>
+            <p>Founded a solo indie game studio and built <em>Dungeon Story</em> for iOS, pairing full product ownership and human taste with AI-native workflows to accelerate execution.</p>
+            <div class="entry-preview">
+              <div class="work-link-group">
+                <a class="work-link is-site" href="https://coffeemakesgames.com/" target="_blank" rel="noreferrer">coffeemakesgames.com</a>
+                <a class="work-link is-trailer" href="https://www.youtube.com/watch?v=z_5Ux8oXAg4" target="_blank" rel="noreferrer">Watch gameplay trailer</a>
+              </div>
+              <div class="work-preview-strip" aria-label="Dungeon Story preview screenshots">
+                <a class="work-preview-card" href="https://coffeemakesgames.com/#dungeon-story" target="_blank" rel="noreferrer" aria-label="Open Dungeon Story on Coffee Makes Games">
+                  <img src="assets/dungeon-story/screenshot-1.webp" alt="Dungeon Story battle board mid-run.">
+                </a>
+                <a class="work-preview-card" href="https://coffeemakesgames.com/#dungeon-story" target="_blank" rel="noreferrer" aria-label="Open Dungeon Story arcanist battle on Coffee Makes Games">
+                  <img src="assets/dungeon-story/screenshot-2.webp" alt="Dungeon Story arcanist battle with fire, ice, and lightning runes.">
+                </a>
+                <a class="work-preview-card" href="https://coffeemakesgames.com/#dungeon-story" target="_blank" rel="noreferrer" aria-label="Open Dungeon Story Crimson Manor battle on Coffee Makes Games">
+                  <img src="assets/dungeon-story/screenshot-3.webp" alt="Dungeon Story thief battle against the Feast King in Crimson Manor.">
+                </a>
+                <a class="work-preview-card" href="https://coffeemakesgames.com/#dungeon-story" target="_blank" rel="noreferrer" aria-label="Open Dungeon Story necromancer battle on Coffee Makes Games">
+                  <img src="assets/dungeon-story/screenshot-4.webp" alt="Dungeon Story necromancer battle against an orc brute beneath a stained-glass window.">
+                </a>
+                <a class="work-preview-card" href="https://coffeemakesgames.com/#dungeon-story" target="_blank" rel="noreferrer" aria-label="Open Dungeon Story world map on Coffee Makes Games">
+                  <img src="assets/dungeon-story/screenshot-5.webp" alt="Dungeon Story world map showing Hearthfall and dungeon locations.">
+                </a>
+                <a class="work-preview-card" href="https://coffeemakesgames.com/#dungeon-story" target="_blank" rel="noreferrer" aria-label="Open Dungeon Story ranger battle on Coffee Makes Games">
+                  <img src="assets/dungeon-story/screenshot-6.webp" alt="Dungeon Story ranger battle with a long sword chain.">
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="writing" class="section-shell section-shell--chip section-shell--timeline">
+      <div class="section-label">Research, Talks &amp; Awards</div>
+      <div class="section-content">
+        <div class="research-shell">
+          <div class="research-stage">
+            <input type="radio" name="research-focus" id="research-2025" checked>
+            <input type="radio" name="research-focus" id="research-2024">
+            <input type="radio" name="research-focus" id="research-2023">
+            <input type="radio" name="research-focus" id="research-2021">
+            <input type="radio" name="research-focus" id="research-2020">
+            <input type="radio" name="research-focus" id="research-2019">
+            <input type="radio" name="research-focus" id="research-2018">
+            <input type="radio" name="research-focus" id="research-2017">
+            <input type="radio" name="research-focus" id="research-2016">
+            <input type="radio" name="research-focus" id="research-2015">
+            <input type="radio" name="research-focus" id="research-2014">
+            <input type="radio" name="research-focus" id="research-2013">
+            <input type="radio" name="research-focus" id="research-2012">
+            <input type="radio" name="research-focus" id="research-2011">
+
+            <div class="research-selector">
+              <div class="research-track" aria-label="Research years">
+                <div class="research-rail">
+                  <label class="research-row" for="research-2025">
+                    <span class="research-stop">
+                      <span class="research-head">
+                        <span class="research-year">2025</span>
+                        <span class="research-meta">
+                          <span class="research-total">
+                            <span class="research-total-value">2</span>
+                            <span class="research-milestones" aria-hidden="true">
+                              <span class="research-milestone is-talks"></span>
+                            </span>
+                            <span class="research-total-icon" aria-hidden="true"></span>
+                          </span>
+                        </span>
+                      </span>
+                      <span class="research-node" aria-hidden="true"></span>
+                    </span>
+                  </label>
+
+                  <label class="research-row" for="research-2024">
+                    <span class="research-stop">
+                      <span class="research-head">
+                        <span class="research-year">2024</span>
+                        <span class="research-meta">
+                          <span class="research-total">
+                            <span class="research-total-value">1</span>
+                            <span class="research-total-icon" aria-hidden="true"></span>
+                          </span>
+                        </span>
+                      </span>
+                      <span class="research-node" aria-hidden="true"></span>
+                    </span>
+                  </label>
+
+                  <label class="research-row" for="research-2023" id="research-stop-2023">
+                    <span class="research-stop">
+                      <span class="research-head">
+                        <span class="research-year">2023</span>
+                        <span class="research-meta">
+                          <span class="research-total">
+                            <span class="research-total-value">3</span>
+                            <span class="research-milestones" aria-hidden="true">
+                              <span class="research-milestone is-award"></span>
+                            </span>
+                            <span class="research-total-divider" aria-hidden="true"></span>
+                            <span class="research-total-icon" aria-hidden="true"></span>
+                          </span>
+                        </span>
+                      </span>
+                      <span class="research-node" aria-hidden="true"></span>
+                    </span>
+                  </label>
+
+                  <label class="research-row" for="research-2021">
+                    <span class="research-stop">
+                      <span class="research-head">
+                        <span class="research-year">2021</span>
+                        <span class="research-meta">
+                          <span class="research-total">
+                            <span class="research-total-value">6</span>
+                            <span class="research-milestones" aria-hidden="true">
+                              <span class="research-milestone is-talks"></span>
+                              <span class="research-milestone is-writing"></span>
+                            </span>
+                            <span class="research-total-icon" aria-hidden="true"></span>
+                          </span>
+                        </span>
+                      </span>
+                      <span class="research-node" aria-hidden="true"></span>
+                    </span>
+                  </label>
+
+                  <label class="research-row" for="research-2020" id="research-stop-2020">
+                    <span class="research-stop">
+                      <span class="research-head">
+                        <span class="research-year">2020</span>
+                        <span class="research-meta">
+                          <span class="research-total">
+                            <span class="research-total-value">4</span>
+                            <span class="research-milestones" aria-hidden="true">
+                              <span class="research-milestone is-award"></span>
+                              <span class="research-milestone is-writing"></span>
+                            </span>
+                            <span class="research-total-divider" aria-hidden="true"></span>
+                            <span class="research-total-icon" aria-hidden="true"></span>
+                          </span>
+                        </span>
+                      </span>
+                      <span class="research-node" aria-hidden="true"></span>
+                    </span>
+                  </label>
+
+                  <label class="research-row" for="research-2019">
+                    <span class="research-stop">
+                      <span class="research-head">
+                        <span class="research-year">2019</span>
+                        <span class="research-meta">
+                          <span class="research-total">
+                            <span class="research-total-value">1</span>
+                            <span class="research-total-icon" aria-hidden="true"></span>
+                          </span>
+                        </span>
+                      </span>
+                      <span class="research-node" aria-hidden="true"></span>
+                    </span>
+                  </label>
+
+                  <label class="research-row" for="research-2018">
+                    <span class="research-stop">
+                      <span class="research-head">
+                        <span class="research-year">2018</span>
+                        <span class="research-meta">
+                          <span class="research-total">
+                            <span class="research-total-value">1</span>
+                            <span class="research-total-icon" aria-hidden="true"></span>
+                          </span>
+                        </span>
+                      </span>
+                      <span class="research-node" aria-hidden="true"></span>
+                    </span>
+                  </label>
+
+                  <label class="research-row" for="research-2017">
+                    <span class="research-stop">
+                      <span class="research-head">
+                        <span class="research-year">2017</span>
+                        <span class="research-meta">
+                          <span class="research-total">
+                            <span class="research-total-value">3</span>
+                            <span class="research-milestones" aria-hidden="true">
+                              <span class="research-milestone is-phd"></span>
+                            </span>
+                            <span class="research-total-divider" aria-hidden="true"></span>
+                            <span class="research-total-icon" aria-hidden="true"></span>
+                          </span>
+                        </span>
+                      </span>
+                      <span class="research-node" aria-hidden="true"></span>
+                    </span>
+                  </label>
+
+                  <label class="research-row" for="research-2016">
+                    <span class="research-stop">
+                      <span class="research-head">
+                        <span class="research-year">2016</span>
+                        <span class="research-meta">
+                          <span class="research-total">
+                            <span class="research-total-value">1</span>
+                            <span class="research-total-icon" aria-hidden="true"></span>
+                          </span>
+                        </span>
+                      </span>
+                      <span class="research-node" aria-hidden="true"></span>
+                    </span>
+                  </label>
+
+                  <label class="research-row" for="research-2015">
+                    <span class="research-stop">
+                      <span class="research-head">
+                        <span class="research-year">2015</span>
+                        <span class="research-meta">
+                          <span class="research-total">
+                            <span class="research-total-value">3</span>
+                            <span class="research-milestones" aria-hidden="true">
+                              <span class="research-milestone is-award"></span>
+                            </span>
+                            <span class="research-total-divider" aria-hidden="true"></span>
+                            <span class="research-total-icon" aria-hidden="true"></span>
+                          </span>
+                        </span>
+                      </span>
+                      <span class="research-node" aria-hidden="true"></span>
+                    </span>
+                  </label>
+
+                  <label class="research-row" for="research-2014">
+                    <span class="research-stop">
+                      <span class="research-head">
+                        <span class="research-year">2014</span>
+                        <span class="research-meta">
+                          <span class="research-total">
+                            <span class="research-total-value">2</span>
+                            <span class="research-total-icon" aria-hidden="true"></span>
+                          </span>
+                        </span>
+                      </span>
+                      <span class="research-node" aria-hidden="true"></span>
+                    </span>
+                  </label>
+
+                  <label class="research-row" for="research-2013">
+                    <span class="research-stop">
+                      <span class="research-head">
+                        <span class="research-year">2013</span>
+                        <span class="research-meta">
+                          <span class="research-total">
+                            <span class="research-total-value">1</span>
+                            <span class="research-total-icon" aria-hidden="true"></span>
+                          </span>
+                        </span>
+                      </span>
+                      <span class="research-node" aria-hidden="true"></span>
+                    </span>
+                  </label>
+
+                  <label class="research-row" for="research-2012">
+                    <span class="research-stop">
+                      <span class="research-head">
+                        <span class="research-year">2012</span>
+                        <span class="research-meta">
+                          <span class="research-total">
+                            <span class="research-total-value">2</span>
+                            <span class="research-total-icon" aria-hidden="true"></span>
+                          </span>
+                        </span>
+                      </span>
+                      <span class="research-node" aria-hidden="true"></span>
+                    </span>
+                  </label>
+
+                  <label class="research-row" for="research-2011">
+                    <span class="research-stop">
+                      <span class="research-head">
+                        <span class="research-year">2011</span>
+                        <span class="research-meta">
+                          <span class="research-total">
+                            <span class="research-total-value">1</span>
+                            <span class="research-milestones" aria-hidden="true">
+                              <span class="research-milestone is-award"></span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                      <span class="research-node" aria-hidden="true"></span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <article class="research-detail detail-2025">
+              <p class="detail-kicker">2025 · 2 items</p>
+              <div class="detail-group">
+                <p class="detail-group-title is-talks">Talks</p>
+                <ul class="detail-list">
+                  <li><a href="https://www.microsoft.com/en-us/research/video/using-llms-for-safe-low-level-programming-microsoft-research-forum/" target="_blank" rel="noreferrer">Using LLMs for safe low-level programming</a>, Microsoft Research Forum, 2025.</li>
+                </ul>
+              </div>
+              <div class="detail-group">
+                <p class="detail-group-title is-paper">Publications</p>
+                <ul class="detail-list">
+                  <li><a href="https://www.microsoft.com/en-us/research/publication/rustassistant-using-llms-to-fix-compilation-errors-in-rust-code/" target="_blank" rel="noreferrer">RustAssistant: Using LLMs to Fix Compilation Errors in Rust Code</a>, ICSE 2025.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="research-detail detail-2024">
+              <p class="detail-kicker">2024 · 1 item</p>
+              <div class="detail-group">
+                <p class="detail-group-title is-paper">Publications</p>
+                <ul class="detail-list">
+                  <li><a href="https://scholar.google.com/scholar?q=%22Leveraging+LLMs+for+Program+Verification%22" target="_blank" rel="noreferrer">Leveraging LLMs for Program Verification</a>, FMCAD 2024.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="research-detail detail-2023">
+              <p class="detail-kicker">2023 · 3 items</p>
+              <div class="detail-group">
+                <p class="detail-group-title is-award">Awards</p>
+                <ul class="detail-list">
+                  <li>Best Software Science Paper Award, TACAS 2023.</li>
+                </ul>
+              </div>
+              <div class="detail-group">
+                <p class="detail-group-title is-paper">Publications</p>
+                <ul class="detail-list">
+                  <li><a href="https://scholar.google.com/scholar?q=%22Industrial-Strength+Controlled+Concurrency+Testing+for+C%23+Programs+with+Coyote%22" target="_blank" rel="noreferrer">Industrial-Strength Controlled Concurrency Testing for C# Programs with Coyote</a>, TACAS 2023.</li>
+                  <li><a href="https://scholar.google.com/scholar?q=%22Finding+Inductive+Loop+Invariants+using+Large+Language+Models%22" target="_blank" rel="noreferrer">Finding Inductive Loop Invariants using Large Language Models</a>, 2023.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="research-detail detail-2021">
+              <p class="detail-kicker">2021 · 6 items</p>
+              <div class="detail-group">
+                <p class="detail-group-title is-talks">Talks and demos</p>
+                <ul class="detail-list">
+                  <li><a href="https://www.youtube.com/watch?v=wxieIoavcGA" target="_blank" rel="noreferrer">Microsoft Research Unplugged – Developer edition</a>, Microsoft Build, 2021.</li>
+                  <li><a href="https://innovation.microsoft.com/en-us/tech-minutes-project-coyote" target="_blank" rel="noreferrer">Tech Minutes: Project Coyote</a>, 2021.</li>
+                  <li><a href="https://innovation.microsoft.com/en-us/exploring-project-coyote" target="_blank" rel="noreferrer">Explore Project Coyote</a>, 2021.</li>
+                </ul>
+              </div>
+              <div class="detail-group">
+                <p class="detail-group-title is-writing">Writing</p>
+                <ul class="detail-list">
+                  <li><a href="https://blogs.microsoft.com/ai-for-business/microsoft-research-tools-help-developers-write-bug-free-code-faster/" target="_blank" rel="noreferrer">New tools from Microsoft Research help developers write bug-free code, faster</a>, 2021.</li>
+                </ul>
+              </div>
+              <div class="detail-group">
+                <p class="detail-group-title is-paper">Publications</p>
+                <ul class="detail-list">
+                  <li><a href="https://scholar.google.com/scholar?q=%22Building+Reliable+Cloud+Services+Using+Coyote+Actors%22" target="_blank" rel="noreferrer">Building Reliable Cloud Services Using Coyote Actors</a>, SoCC 2021.</li>
+                  <li><a href="https://scholar.google.com/scholar?q=%22Nekara%3A+Generalized+Concurrency+Testing%22" target="_blank" rel="noreferrer">Nekara: Generalized Concurrency Testing</a>, ASE 2021.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="research-detail detail-2020">
+              <p class="detail-kicker">2020 · 4 items</p>
+              <div class="detail-group">
+                <p class="detail-group-title is-award">Awards</p>
+                <ul class="detail-list">
+                  <li>Distinguished Artifact Award, OOPSLA 2020.</li>
+                </ul>
+              </div>
+              <div class="detail-group">
+                <p class="detail-group-title is-writing">Writing</p>
+                <ul class="detail-list">
+                  <li><a href="https://cloudblogs.microsoft.com/opensource/2020/07/14/extreme-programming-meets-systematic-testing-using-coyote/" target="_blank" rel="noreferrer">Extreme programming meets systematic testing using Coyote</a>, 2020.</li>
+                </ul>
+              </div>
+              <div class="detail-group">
+                <p class="detail-group-title is-paper">Publications</p>
+                <ul class="detail-list">
+                  <li><a href="https://scholar.google.com/scholar?q=%22Learning-based+controlled+concurrency+testing%22" target="_blank" rel="noreferrer">Learning-based controlled concurrency testing</a>, OOPSLA 2020.</li>
+                  <li><a href="https://scholar.google.com/scholar?q=%22Studying+ransomware+attacks+using+web+search+logs%22" target="_blank" rel="noreferrer">Studying ransomware attacks using web search logs</a>, SIGIR 2020.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="research-detail detail-2019">
+              <p class="detail-kicker">2019 · 1 item</p>
+              <div class="detail-group">
+                <p class="detail-group-title is-paper">Publications</p>
+                <ul class="detail-list">
+                  <li><a href="https://scholar.google.com/scholar?q=%22Reliable+State+Machines%3A+a+framework+for+programming+reliable+cloud+services%22" target="_blank" rel="noreferrer">Reliable State Machines: a framework for programming reliable cloud services</a>, ECOOP 2019.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="research-detail detail-2018">
+              <p class="detail-kicker">2018 · 1 item</p>
+              <div class="detail-group">
+                <p class="detail-group-title is-paper">Publications</p>
+                <ul class="detail-list">
+                  <li><a href="https://scholar.google.com/scholar?q=%22Implementing+and+evaluating+candidate-based+invariant+generation%22" target="_blank" rel="noreferrer">Implementing and evaluating candidate-based invariant generation</a>, TSE 2018.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="research-detail detail-2017">
+              <p class="detail-kicker">2017 · 3 items</p>
+              <div class="detail-group">
+                <p class="detail-group-title is-phd">Thesis</p>
+                <ul class="detail-list">
+                  <li><a href="https://scholar.google.com/scholar?q=%22Scalable+techniques+for+analysing+and+testing+asynchronous+software+systems%22" target="_blank" rel="noreferrer">Scalable techniques for analysing and testing asynchronous software systems</a>, PhD thesis, 2017.</li>
+                </ul>
+              </div>
+              <div class="detail-group">
+                <p class="detail-group-title is-paper">Publications</p>
+                <ul class="detail-list">
+                  <li><a href="https://scholar.google.com/scholar?q=%22Project+Snowflake%3A+non-blocking+safe+manual+memory+management+in+.NET%22" target="_blank" rel="noreferrer">Project Snowflake: non-blocking safe manual memory management in .NET</a>, OOPSLA 2017.</li>
+                  <li><a href="https://scholar.google.com/scholar?q=%22Lasso+detection+using+partial+state+caching%22" target="_blank" rel="noreferrer">Lasso detection using partial state caching</a>, FMCAD 2017.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="research-detail detail-2016">
+              <p class="detail-kicker">2016 · 1 item</p>
+              <div class="detail-group">
+                <p class="detail-group-title is-paper">Publications</p>
+                <ul class="detail-list">
+                  <li><a href="https://scholar.google.com/scholar?q=%22Uncovering+bugs+in+distributed+storage+systems+during+testing+%28not+in+production%21%29%22" target="_blank" rel="noreferrer">Uncovering bugs in distributed storage systems during testing (not in production!)</a>, FAST 2016.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="research-detail detail-2015">
+              <p class="detail-kicker">2015 · 3 items</p>
+              <div class="detail-group">
+                <p class="detail-group-title is-award">Awards</p>
+                <ul class="detail-list">
+                  <li>UK ICT Pioneers finalist, 2015.</li>
+                </ul>
+              </div>
+              <div class="detail-group">
+                <p class="detail-group-title is-paper">Publications</p>
+                <ul class="detail-list">
+                  <li><a href="https://scholar.google.com/scholar?q=%22Fast+and+precise+symbolic+analysis+of+concurrency+bugs+in+device+drivers%22" target="_blank" rel="noreferrer">Fast and precise symbolic analysis of concurrency bugs in device drivers</a>, ASE 2015.</li>
+                  <li><a href="https://scholar.google.com/scholar?q=%22Asynchronous+programming%2C+analysis+and+testing+with+state+machines%22" target="_blank" rel="noreferrer">Asynchronous programming, analysis and testing with state machines</a>, PLDI 2015.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="research-detail detail-2014">
+              <p class="detail-kicker">2014 · 2 items</p>
+              <div class="detail-group">
+                <p class="detail-group-title is-paper">Publications</p>
+                <ul class="detail-list">
+                  <li><a href="https://scholar.google.com/scholar?q=%22Automatic+verification+of+data+race+freedom+in+device+drivers%22" target="_blank" rel="noreferrer">Automatic verification of data race freedom in device drivers</a>, ICCSW 2014.</li>
+                  <li><a href="https://scholar.google.com/scholar?q=%22Engineering+a+static+verification+tool+for+GPU+kernels%22" target="_blank" rel="noreferrer">Engineering a static verification tool for GPU kernels</a>, CAV 2014.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="research-detail detail-2013">
+              <p class="detail-kicker">2013 · 1 item</p>
+              <div class="detail-group">
+                <p class="detail-group-title is-paper">Publications</p>
+                <ul class="detail-list">
+                  <li><a href="https://scholar.google.com/scholar?q=%22A+survey+of+high-level+parallel+programming+models%22" target="_blank" rel="noreferrer">A survey of high-level parallel programming models</a>, 2013.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="research-detail detail-2012">
+              <p class="detail-kicker">2012 · 2 items</p>
+              <div class="detail-group">
+                <p class="detail-group-title is-paper">Publications</p>
+                <ul class="detail-list">
+                  <li><a href="https://scholar.google.com/scholar?q=%22Haskell+vs.+F%23+vs.+Scala%3A+a+high-level+language+features+and+parallelism+support+comparison%22" target="_blank" rel="noreferrer">Haskell vs. F# vs. Scala: a high-level language features and parallelism support comparison</a>, FHPC 2012.</li>
+                  <li><a href="https://scholar.google.com/scholar?q=%22Improving+the+diagnosis+of+mild+hypertrophic+cardiomyopathy+with+MapReduce%22" target="_blank" rel="noreferrer">Improving the diagnosis of mild hypertrophic cardiomyopathy with MapReduce</a>, MAPREDUCE 2012.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="research-detail detail-2011">
+              <p class="detail-kicker">2011 · 1 item</p>
+              <div class="detail-group">
+                <p class="detail-group-title is-award">Awards</p>
+                <ul class="detail-list">
+                  <li>Alison Cawsey Memorial Prize, 2011.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="award-strip" aria-label="Research links and selected awards">
+            <button class="award-chip award-chip-button" type="button" onclick="document.getElementById('research-2023').checked = true;">
+              <img class="award-icon" src="assets/award.png" alt="">
+              <span>Best Software Science Paper · TACAS 2023</span>
+            </button>
+            <button class="award-chip award-chip-button" type="button" onclick="document.getElementById('research-2020').checked = true;">
+              <img class="award-icon" src="assets/award.png" alt="">
+              <span>Distinguished Artifact Award · OOPSLA 2020</span>
+            </button>
+            <a class="award-chip scholar-link" href="https://scholar.google.com/citations?hl=en&user=l0nwV1UAAAAJ" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 9.5 12 5l9 4.5-9 4.5L3 9.5Z"></path>
+                <path d="M7 12.5V16c0 .9 2.2 2.2 5 2.2s5-1.3 5-2.2v-3.5"></path>
+                <path d="M19 10v4.5"></path>
+              </svg>
+              <span>Google Scholar</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="travels" class="section-shell section-shell--chip">
+      <div class="section-label">Travels</div>
+      <div class="section-content">
+        <div class="atlas">
+          <div class="atlas-stage">
+            <input type="radio" name="atlas" id="atlas-world" checked>
+            <input type="radio" name="atlas" id="atlas-us">
+            <div class="map-switch" aria-label="Travel view switch">
+              <label for="atlas-world">World <span class="map-switch-count">32</span></label>
+              <label for="atlas-us">US <span class="map-switch-count">16</span></label>
+            </div>
+
+            <div class="maps">
+              <div class="map world-map">
+                <div class="registry registry--world" role="group" aria-label="World travel lookup table">
+                  <div class="registry-buckets">
+                    <section class="registry-bucket" aria-label="Americas bucket">
+                      <p class="registry-bucket-name">americas</p>
+                      <div class="registry-cells">
+                        <span class="registry-cell" title="Argentina">AR</span>
+                        <span class="registry-cell" title="Bahamas">BS</span>
+                        <span class="registry-cell" title="Canada">CA</span>
+                        <span class="registry-cell" title="Costa Rica">CR</span>
+                        <span class="registry-cell" title="Mexico">MX</span>
+                        <span class="registry-cell" title="United States">US</span>
+                      </div>
+                    </section>
+
+                    <section class="registry-bucket" aria-label="Europe bucket">
+                      <p class="registry-bucket-name">europe</p>
+                      <div class="registry-cells">
+                        <span class="registry-cell" title="Austria">AT</span>
+                        <span class="registry-cell" title="Belgium">BE</span>
+                        <span class="registry-cell" title="Switzerland">CH</span>
+                        <span class="registry-cell" title="Czech Republic">CZ</span>
+                        <span class="registry-cell" title="Germany">DE</span>
+                        <span class="registry-cell" title="Spain">ES</span>
+                        <span class="registry-cell" title="France">FR</span>
+                        <span class="registry-cell" title="United Kingdom">GB</span>
+                        <span class="registry-cell" title="Greece">GR</span>
+                        <span class="registry-cell" title="Croatia">HR</span>
+                        <span class="registry-cell" title="Italy">IT</span>
+                        <span class="registry-cell" title="Luxembourg">LU</span>
+                        <span class="registry-cell" title="Monaco">MC</span>
+                        <span class="registry-cell" title="Montenegro">ME</span>
+                        <span class="registry-cell" title="Netherlands">NL</span>
+                        <span class="registry-cell" title="Portugal">PT</span>
+                        <span class="registry-cell" title="Slovenia">SI</span>
+                      </div>
+                    </section>
+
+                    <section class="registry-bucket" aria-label="Asia bucket">
+                      <p class="registry-bucket-name">asia</p>
+                      <div class="registry-cells">
+                        <span class="registry-cell" title="United Arab Emirates">AE</span>
+                        <span class="registry-cell" title="India">IN</span>
+                        <span class="registry-cell" title="Japan">JP</span>
+                        <span class="registry-cell" title="South Korea">KR</span>
+                        <span class="registry-cell" title="Maldives">MV</span>
+                        <span class="registry-cell" title="Thailand">TH</span>
+                        <span class="registry-cell" title="Turkey">TR</span>
+                        <span class="registry-cell" title="Taiwan">TW</span>
+                        <span class="registry-cell" title="Vietnam">VN</span>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+
+              <div class="map us-map">
+                <div class="registry registry--us" role="group" aria-label="United States travel lookup table">
+                  <div class="registry-buckets">
+                    <section class="registry-bucket" aria-label="Pacific bucket">
+                      <p class="registry-bucket-name">pacific</p>
+                      <div class="registry-cells">
+                        <span class="registry-cell" title="California">CA</span>
+                        <span class="registry-cell" title="Hawaii">HI</span>
+                        <span class="registry-cell" title="Oregon">OR</span>
+                        <span class="registry-cell" title="Washington">WA</span>
+                      </div>
+                    </section>
+
+                    <section class="registry-bucket" aria-label="Mountain bucket">
+                      <p class="registry-bucket-name">mountain</p>
+                      <div class="registry-cells">
+                        <span class="registry-cell" title="Arizona">AZ</span>
+                        <span class="registry-cell" title="Colorado">CO</span>
+                        <span class="registry-cell" title="Idaho">ID</span>
+                        <span class="registry-cell" title="Montana">MT</span>
+                        <span class="registry-cell" title="New Mexico">NM</span>
+                        <span class="registry-cell" title="Nevada">NV</span>
+                        <span class="registry-cell" title="Utah">UT</span>
+                      </div>
+                    </section>
+
+                    <section class="registry-bucket" aria-label="Central bucket">
+                      <p class="registry-bucket-name">central</p>
+                      <div class="registry-cells">
+                        <span class="registry-cell" title="Illinois">IL</span>
+                        <span class="registry-cell" title="Nebraska">NE</span>
+                        <span class="registry-cell" title="Texas">TX</span>
+                      </div>
+                    </section>
+
+                    <section class="registry-bucket" aria-label="East bucket">
+                      <p class="registry-bucket-name">east</p>
+                      <div class="registry-cells">
+                        <span class="registry-cell" title="Florida">FL</span>
+                        <span class="registry-cell" title="New York">NY</span>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year">2026</span> Pantazis Deligiannis</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    (function () {
+      const section = document.getElementById('writing');
+      const label = section ? section.querySelector('.section-label') : null;
+      const content = section ? section.querySelector('.section-content') : null;
+      if (!section || !label || !content) {
+        return;
+      }
+
+      const syncTimelineClearance = function () {
+        const labelRect = label.getBoundingClientRect();
+        const contentRect = content.getBoundingClientRect();
+        const overlap = Math.max(0, labelRect.right - contentRect.left);
+        section.style.setProperty('--research-label-clearance', Math.round(overlap + 18) + 'px');
+      };
+
+      syncTimelineClearance();
+      window.addEventListener('resize', syncTimelineClearance, { passive: true });
+
+      if ('ResizeObserver' in window) {
+        const ro = new ResizeObserver(syncTimelineClearance);
+        ro.observe(label);
+        ro.observe(content);
+      }
+    })();
+
+    (function () {
+      const root = document.documentElement;
+      const buttons = Array.from(document.querySelectorAll('.theme-toggle'));
+      const meta = document.querySelector('meta[name="theme-color"]');
+      const mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+      const LIGHT_THEME_COLOR = '#f7f3ec';
+      const DARK_THEME_COLOR = '#0f1723';
+
+      const syncTheme = function (theme, source) {
+        const resolvedTheme = theme === 'dark' ? 'dark' : 'light';
+        const resolvedSource = source === 'user' ? 'user' : 'system';
+        const isDark = resolvedTheme === 'dark';
+        const label = isDark ? 'Switch to light mode' : 'Switch to dark mode';
+
+        root.setAttribute('data-theme', resolvedTheme);
+        root.setAttribute('data-theme-source', resolvedSource);
+
+        if (meta) {
+          meta.setAttribute('content', isDark ? DARK_THEME_COLOR : LIGHT_THEME_COLOR);
+        }
+
+        buttons.forEach(function (button) {
+          button.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+          button.setAttribute('aria-label', label);
+          button.setAttribute('title', label);
+        });
+      };
+
+      buttons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          const nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          try {
+            localStorage.setItem('theme', nextTheme);
+          } catch (e) {}
+          syncTheme(nextTheme, 'user');
+        });
+      });
+
+      if (mq) {
+        const handleSystemThemeChange = function (event) {
+          if (root.getAttribute('data-theme-source') === 'user') {
+            return;
+          }
+          syncTheme(event.matches ? 'dark' : 'light', 'system');
+        };
+
+        if (typeof mq.addEventListener === 'function') {
+          mq.addEventListener('change', handleSystemThemeChange);
+        } else if (typeof mq.addListener === 'function') {
+          mq.addListener(handleSystemThemeChange);
+        }
+      }
+
+      syncTheme(root.getAttribute('data-theme'), root.getAttribute('data-theme-source'));
+    })();
+
+    (function () {
+      const header = document.querySelector('.site-header');
+      const hero = document.querySelector('.hero');
+      const body = document.body;
+      if (!header || !hero || !('IntersectionObserver' in window)) {
+        if (header) {
+          header.classList.add('is-revealed');
+          header.setAttribute('aria-hidden', 'false');
+        }
+        if (body) {
+          body.classList.toggle('header-revealed', Boolean(header));
+        }
+        return;
+      }
+
+      const io = new IntersectionObserver(function (entries) {
+        const visible = entries[0].isIntersecting;
+        header.classList.toggle('is-revealed', !visible);
+        body.classList.toggle('header-revealed', !visible);
+        header.setAttribute('aria-hidden', visible ? 'true' : 'false');
+      }, { rootMargin: '-72px 0px 0px 0px', threshold: 0 });
+
+      io.observe(hero);
+    })();
+  </script>
+</body>
+</html>
